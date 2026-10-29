@@ -1,0 +1,24 @@
+beta in [0,0.002]: Theta <= 0.8210
+beta in [0.002,0.005]: Theta <= 0.8199
+beta in [0.005,0.01]: Theta <= 0.8179
+beta in [0.01,0.02]: Theta <= 0.8151
+beta in [0.02,0.04]: Theta <= 0.8092
+beta in [0.04,0.07]: Theta <= 0.7979
+beta in [0.07,0.1]: Theta <= 0.7801
+beta in [0.1,0.15]: Theta <= 0.7668
+beta in [0.15,0.2]: Theta <= 0.7363
+beta in [0.2,0.3]: Theta <= 0.7066
+beta in [0.3,0.45]: Theta <= inf
+beta in [0.45,0.6]: Theta <= inf
+beta in [0.6,0.8]: Theta <= inf
+beta in [0.8,1]: Theta <= inf
+beta in [1,1.3]: Theta <= 1.0016
+beta in [1.3,1.7]: Theta <= 0.8375
+beta in [1.7,2.2]: Theta <= 0.6900
+beta in [2.2,3]: Theta <= 0.5844
+beta in [3,4]: Theta <= 0.4816
+FAIL {'cell': (0.8, 1), 'ok': False, 'why': 'tail', 'at': (-43.2, -40.0), 'edge': 13}
+FAIL {'cell': (0.6, 0.8), 'ok': False, 'why': 'tail', 'at': (-43.2, -40.0), 'edge': 12}
+FAIL {'cell': (0.45, 0.6), 'ok': False, 'why': 'tail', 'at': (-43.2, -40.0), 'edge': 11}
+FAIL {'cell': (0.3, 0.45), 'ok': False, 'why': 'tail', 'at': (-43.2, -40.0), 'edge': 10}
+seconds 548.4884195327759

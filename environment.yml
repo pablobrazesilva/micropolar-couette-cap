@@ -1,0 +1,19 @@
+# Conda environment for level-2/3 recomputation (level 1 needs only Python's standard library).
+# The original runs used exactly: FLINT 3.0.1 (system library for g2_evans/evans), python-flint 0.9.0 (pip wheel),
+# numpy 2.5.3, scipy 1.18.1, mpmath 1.3.0, Python 3.13.16.  The versions below are those; adjust only if unavailable.
+name: micropolar-couette-cap
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - libflint=3.0.1
+  - gmp
+  - mpfr
+  - c-compiler
+  - make
+  - numpy=2.5.3
+  - scipy=1.18.1
+  - mpmath=1.3.0
+  - pip
+  - pip:
+      - python-flint==0.9.0

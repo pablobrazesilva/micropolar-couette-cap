@@ -1,0 +1,9 @@
+# outputs of recomputations (scripts/recompute_samples.py, scripts/full_recompute.sh)
+work/
+# build products
+g2_evans/evans
+*.o
+__pycache__/
+*.pyc
+# caches written by some verifiers when run from their own directory
+*.pkl

@@ -1,0 +1,23 @@
+(1) Pi           cota inferior pontual 0.1308121942 (t=0.0000)   cota superior certificada 0.1309053795   folga 9.32e-05
+(1) Pi1(Ai')     cota inferior pontual 0.1180010858 (t=0.7390)   cota superior certificada 0.1181400164   folga 1.39e-04
+(1) Pi1b(Ai'wb)  cota inferior pontual 0.1180010858 (t=-0.7390)   cota superior certificada 0.1181408602   folga 1.40e-04
+(1) Pi_psi       cota inferior pontual 0.1366145426 (t=-0.6630)   cota superior certificada 0.1390479460   folga 2.43e-03
+(1) Pi1_psi      cota inferior pontual 0.1582119999 (t=-1.3340)   cota superior certificada 0.1624090251   folga 4.20e-03
+(2) t=    40 |AiAi|=0.01258 <= 0.01298   |Ai'Ai|=0.07963,|AiAi'|=0.07952 <= 0.08460 OK
+(2) t=   -40 |AiAi|=0.01258 <= 0.01298   |Ai'Ai|=0.07952,|AiAi'|=0.07963 <= 0.08460 OK
+(2) t=    60 |AiAi|=0.01027 <= 0.01298   |Ai'Ai|=0.07961,|AiAi'|=0.07955 <= 0.08460 OK
+(2) t=   -60 |AiAi|=0.01027 <= 0.01298   |Ai'Ai|=0.07955,|AiAi'|=0.07961 <= 0.08460 OK
+(2) t=   200 |AiAi|=0.00563 <= 0.01298   |Ai'Ai|=0.07958,|AiAi'|=0.07957 <= 0.08460 OK
+(2) t=  -200 |AiAi|=0.00563 <= 0.01298   |Ai'Ai|=0.07957,|AiAi'|=0.07958 <= 0.08460 OK
+(2) t=  2000 |AiAi|=0.00178 <= 0.01298   |Ai'Ai|=0.07958,|AiAi'|=0.07958 <= 0.08460 OK
+(2) t= -2000 |AiAi|=0.00178 <= 0.01298   |Ai'Ai|=0.07958,|AiAi'|=0.07958 <= 0.08460 OK
+(2) t=  -20 |Ai(wb)psi|=0.00400 <= 0.00567  |Ai'(wb)psi|=0.01793 <= 0.02777 OK
+(2) t=  -25 |Ai(wb)psi|=0.00320 <= 0.00567  |Ai'(wb)psi|=0.01601 <= 0.02777 OK
+(2) t=   30 |Ai(wb)psi|=0.00264 <= 0.00280  |Ai'(wb)psi|=0.01447 <= 0.01609 OK
+(2) t=   40 |Ai(wb)psi|=0.00199 <= 0.00280  |Ai'(wb)psi|=0.01255 <= 0.01609 OK
+(2) t= -200 |Ai(wb)psi|=0.00040 <= 0.00567  |Ai'(wb)psi|=0.00563 <= 0.02777 OK
+(2) t=  200 |Ai(wb)psi|=0.00040 <= 0.00280  |Ai'(wb)psi|=0.00563 <= 0.01609 OK
+(3) T=2: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(3) T=5: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(3) T=10: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(4) alvo Pi = 0.1308120942 (abaixo do valor pontual): NAO certificavel (esperado)

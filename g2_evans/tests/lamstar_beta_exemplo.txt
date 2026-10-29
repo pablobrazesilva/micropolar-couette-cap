@@ -1,0 +1,7 @@
+# EXEMPLO (teste do leitor; NAO e' certificado).  sigma_lo sigma_hi beta_lo beta_hi Lamstar cert.json
+10  20  0.0  0.5  6     apriori_cert_exemplo/a.json
+10  20  0.5  1.0  3     apriori_cert_exemplo/b.json
+10  20  0.8  2.0  NONE  apriori_cert_exemplo/c.json
+10  20  0.4  0.6  2     apriori_cert_exemplo/d.json     # sobreposicao: vale o menor
+20  30  0.0  1.0  5     apriori_cert_exemplo/e.json
+# buraco proposital: sigma in [20,30], beta in (1.0, ...] nao coberto

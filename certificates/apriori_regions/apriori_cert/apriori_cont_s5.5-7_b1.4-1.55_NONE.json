@@ -1,0 +1,30 @@
+{
+ "NJG": [
+  1,
+  1,
+  0.5
+ ],
+ "s_lo": 5.5,
+ "s_hi": 7.0,
+ "beta_lo": 1.4,
+ "beta_hi": 1.55,
+ "Lstar": "NONE",
+ "metodo": "continuacao: reta Re Lambda = -delta' + cauda, ancorada no retangulo NONE adjacente em beta = beta_hi",
+ "delta_prime": "0.05*0.5^(1/3)",
+ "P0": 100.0,
+ "evals": 460,
+ "LG_ok": 284,
+ "airy_evals": 202,
+ "tail_evals": 12,
+ "fails": [],
+ "nfails": 0,
+ "sec": 17.6,
+ "code": {
+  "ap_arb.py": "5db5a48105cd1ba02d5da4d58c1e1e62",
+  "ap_airy.py": "e846c1569b7a943e122d53e917f0c54e",
+  "ap_airy3.py": "9d30867d9f41bece051e0f1af5c95fb6",
+  "driver2.py": "77ab5d713be9e9ee2f6c4bd947ec61d7",
+  "driver5.py": "78c4bf3f5a34cfc21edde901a457481e"
+ },
+ "ok": true
+}

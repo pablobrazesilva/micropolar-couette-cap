@@ -1,0 +1,1 @@
+{"s_lo": 66.0, "s_hi": 199.26469083325037, "Lstar": 4.0, "P0": 100.0, "ratio": 1.1, "evals": 282637, "boxes_ok": 176883, "tail_evals": 357, "skipped": 1144, "nfails": 0, "sec": 1359, "nota": "execucao [66,288] interrompida apos a celula que termina em 199.26469083325037 (12 celulas certificadas, ver run_B.log); o resto, [199.2647,288], em runs_B2.jsonl"}

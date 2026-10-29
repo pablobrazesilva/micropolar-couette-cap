@@ -1,0 +1,20 @@
+faixa [3.7498,4) L*=15:  com L*=14  pior rho=0.992 em (beta, Re, Im)=(0, -0.0396, -14.0)  -> passa
+faixa [4,4.45) L*=14:  com L*=13  pior rho=1.032 em (beta, Re, Im)=(0, -0.0396, -13.0)  -> FALHA (controle ok)
+faixa [4.45,5.05) L*=13:  com L*=12  pior rho=1.046 em (beta, Re, Im)=(0, -0.0396, -12.0)  -> FALHA (controle ok)
+faixa [5.05,5.8) L*=12:  com L*=11  pior rho=1.054 em (beta, Re, Im)=(0, -0.0396, -11.0)  -> FALHA (controle ok)
+faixa [5.8,6.75) L*=11:  com L*=10  pior rho=1.064 em (beta, Re, Im)=(0, -0.0396, -10.0)  -> FALHA (controle ok)
+faixa [6.75,8.05) L*=10:  com L*=9  pior rho=1.078 em (beta, Re, Im)=(0, -0.0396, -9.0)  -> FALHA (controle ok)
+faixa [8.05,9.8) L*=9:  com L*=8  pior rho=1.090 em (beta, Re, Im)=(0, -0.0396, -8.0)  -> FALHA (controle ok)
+faixa [9.8,12.3) L*=8:  com L*=7  pior rho=1.112 em (beta, Re, Im)=(0, -0.0396, -7.0)  -> FALHA (controle ok)
+faixa [12.3,16.2) L*=7:  com L*=6  pior rho=1.144 em (beta, Re, Im)=(0, -0.0396, -6.0)  -> FALHA (controle ok)
+faixa [16.2,23.1) L*=6:  com L*=5  pior rho=1.192 em (beta, Re, Im)=(0, -0.0396, -5.0)  -> FALHA (controle ok)
+faixa [23.1,47.4) L*=5:  com L*=4  pior rho=1.323 em (beta, Re, Im)=(0, 4.0, 2.1699836568719366)  -> FALHA (controle ok)
+faixa [47.4,288) L*=4:  com L*=3  pior rho=1.800 em (beta, Re, Im)=(0, 3.0, 3.017845291641759)  -> FALHA (controle ok)
+  sigma in [3.7498, 4.0000]: avaliacoes=18160, caixas ok=9363, cauda=7, puladas=15, falhas=0, max rho=1.0000, 59s
+verificador, sigma in [3.7498,4], L*=14 (tabela: 15): avaliacoes=18160, falhas=0, primeira=None
+  sigma in [8.0500, 8.8550]: avaliacoes=60033, caixas ok=3672, cauda=19, puladas=3, falhas=26383, max rho=1.0000, 199s
+verificador, sigma in [8.05,8.855], L*=8 (tabela: 9): avaliacoes=60033, falhas=26383, primeira=('rho', np.float64(1.0011964180532742), (8.854175847298356, 8.855000000000002, 0.062309423050797993, 0.06237033157772937, -0.000620078535925078, 0.0, -8.0015625, -8.0))
+  sigma in [47.4000, 52.1400]: avaliacoes=60217, caixas ok=22512, cauda=27, puladas=2, falhas=7688, max rho=1.0000, 213s
+verificador, sigma in [47.4,52.14], L*=3 (tabela: 4): avaliacoes=60217, falhas=7688, primeira=('rho', np.float64(1.0000080458473906), (49.973336543582384, 49.99194534999139, 0.03440467404030698, 0.03453959433066113, 3.45, 3.4505859375, -0.15965716819356873, -0.15848529319356874))
+cauda sigma=288, beta=0, P0=100: ok=True rho=0.016495449475425417 why=None
+cauda sigma=288, beta=0, P0=30: ok=False rho=None why=A

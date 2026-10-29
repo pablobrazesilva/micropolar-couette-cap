@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use these codes or certificates, please cite the article and this archive."
+title: "micropolar-couette-cap: codes and certificates for the computer-assisted proof of linear stability of micropolar plane Couette flow"
+version: 1.0.0
+date-released: "2026-10-28"   # TODO: set to the release date
+license: MIT
+type: software
+authors:
+  - family-names: "Braz e Silva"
+    given-names: "P."
+    affiliation: "Department of Mathematics, Universidade Federal de Pernambuco"
+    orcid: "https://orcid.org/0000-0003-0847-2435"
+# doi: 10.5281/zenodo.TODO      # TODO: filled in after the first Zenodo release
+# repository-code: "https://github.com/<user>/micropolar-couette-cap"   # TODO: uncomment and fill in after creating the GitHub repository
+keywords:
+  - micropolar fluid
+  - plane Couette flow
+  - linear stability
+  - computer-assisted proof
+  - ball arithmetic
+  - Arb
+  - FLINT
+  - Evans function
+preferred-citation:
+  type: article
+  title: "Linear stability of plane Couette flow of a micropolar fluid with the microrotation-vorticity boundary condition"
+  authors:
+    - family-names: "Braz e Silva"
+      given-names: "Pablo"
+      affiliation: "Department of Mathematics, Universidade Federal de Pernambuco"
+      orcid: "https://orcid.org/0000-0003-0847-2435"
+  year: 2026
+  status: preprint

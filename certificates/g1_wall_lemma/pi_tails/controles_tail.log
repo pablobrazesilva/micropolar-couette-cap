@@ -1,0 +1,5 @@
+(2) t=  200 |Ai(wb)psi|=0.00040 <= 0.00280  |Ai'(wb)psi|=0.00563 <= 0.01609 OK
+(3) T=2: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(3) T=5: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(3) T=10: hipoteses dos Lemas B/D falham (eps_B nao < 1) -> cota de cauda inaplicavel (esperado)
+(4) alvo Pi = 0.1308120942 (abaixo do valor pontual): NAO certificavel (esperado)

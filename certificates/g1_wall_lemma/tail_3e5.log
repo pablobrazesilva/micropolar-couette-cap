@@ -1,0 +1,3 @@
+# Regenerated on 2026-10-28 for this repository (the original run printed to the terminal only; same code, same arguments).
+$ python3 g1_wall_lemma/tail.py 1 1 0.5 0.796 3e5
+(1,1,0.5) tail sigma>=3e5 (S_h=[133.89 +/- 3.42e-3], bA(S_h)=[9.171 +/- 4.16e-4]): margin >= 0.7685  th_max>=[0.92032 +/- 2.86e-6] eW<=[0.1157 +/- 3.00e-5] eD<=[0.03619 +/- 3.08e-6] leak<=[1.38e-9 +/- 4.74e-12]

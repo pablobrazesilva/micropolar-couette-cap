@@ -1,0 +1,9 @@
+regiao a priori por beta: lamstar_beta.txt (145 retangulos, sha256 b8a3e384f93bb87f), certificados invalidos: 0
+faixas G1 (g1strip): 7, invalidas: 0
+certificados de contorno: 65; de reta (continuacao): 458, aceitos (V1+V2, componente com ancora): 458
+certificados obsoletos (Lambda* insuficiente para as entradas atuais), ignorados: 0
+linhas lidas: 609   certificados validos: 523   tempo total (CPU dos certificados): 28.5 h
+caixas-base: 263   descobertas: 0   caixas com zeros (instabilidade!): 0
+lista-base identica a gerada por base_boxes(0.5, 0.05): True
+arquivo Lambda*: lamstar.txt (sha256 77907aa1deadf37a); certificados que usam faixas PROVISORIAS: 0
+RESULTADO: K' COBERTO, 0 autovalores instaveis

@@ -1,0 +1,5 @@
+  sigma in [199.2647, 218.4846]: avaliacoes=27666, caixas ok=17116, cauda=32, puladas=122, falhas=0, max rho=1.0000, 157s
+  sigma in [218.4846, 239.5584]: avaliacoes=57570, caixas ok=35465, cauda=65, puladas=225, falhas=0, max rho=1.0000, 329s
+  sigma in [239.5584, 262.6648]: avaliacoes=90922, caixas ok=55437, cauda=97, puladas=321, falhas=0, max rho=1.0000, 522s
+  sigma in [262.6648, 288.0000]: avaliacoes=122513, caixas ok=74631, cauda=130, puladas=421, falhas=0, max rho=1.0000, 706s
+RESULTADO {"s_lo": 199.26469083325037, "s_hi": 288.0, "Lstar": 4.0, "P0": 100.0, "ratio": 1.1, "evals": 122513, "boxes_ok": 74631, "tail_evals": 130, "skipped": 421, "fails": [], "nfails": 0, "max_rho": 0.9999953284550704, "sec": 706.3110008239746}

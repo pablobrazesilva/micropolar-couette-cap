@@ -1,0 +1,10 @@
+# Faixas em que o criterio do G1 (crit3 v5 + Lema F8 + rota 3, sem rota 4) foi certificado em Arb (driver crit3arb),
+# para (1;1;0,5), c_A = 0,796.  Formato: sigma_lo  sigma_hi  beta_min  certificado(json do driver)
+# Significado: nao ha autovalor instavel para sigma in [lo,hi] e beta >= beta_min (G1 ate beta_A; Teorema A acima).
+280  288  0.05  g1cert/out_S_280.json
+265  280  0.1   g1cert/out_S_265.json
+250  265  0.2   g1cert/out_S_250.json
+240  250  0.4   g1cert/out_S_240.json
+232  240  0.45  g1cert/out_S_232.json
+225  232  0.5   g1cert/out_S_225.json
+215  225  0.6   g1cert/out_S_215.json

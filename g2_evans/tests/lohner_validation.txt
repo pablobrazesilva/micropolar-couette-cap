@@ -1,0 +1,9 @@
+box 0.45 0.55 4.95 5.05 seg len 0.25
+  antigo (TK=3, sem Lohner): c0 mid=5.003e+06 rad=5.088e-27 ; ok=1 |c0|=5.0027e+06  R_poly=2.432e+03 R_lohner=0.000e+00  ratio=4.862e-04  t=1.03s
+  novo   (TK=5/3, Lohner):   c0 mid=5.003e+06 rad=5.088e-27 ; ok=1 |c0|=5.0027e+06  R_poly=0.000e+00 R_lohner=5.041e+03  ratio=1.008e-03  t=2.71s
+box 0.5 0.6 20 20.4 seg len 0.25
+  antigo (TK=3, sem Lohner): c0 mid=3.349e+09 rad=2.804e-23 ; ok=1 |c0|=3.3485e+09  R_poly=5.538e+07 R_lohner=0.000e+00  ratio=1.654e-02  t=1.33s
+  novo   (TK=5/3, Lohner):   c0 mid=3.349e+09 rad=2.804e-23 ; ok=1 |c0|=3.3485e+09  R_poly=0.000e+00 R_lohner=6.724e+06  ratio=2.008e-03  t=3.09s
+box 1.0 1.125 101.67 103 seg len 0.1
+  antigo (TK=3, sem Lohner): c0 mid=1.862e+17 rad=2.212e-12 ; ok=1 |c0|=1.8619e+17  R_poly=4.533e+17 R_lohner=0.000e+00  ratio=2.434e+00  t=2.15s
+  novo   (TK=5/3, Lohner):   c0 mid=1.862e+17 rad=2.212e-12 ; ok=1 |c0|=1.8619e+17  R_poly=0.000e+00 R_lohner=1.039e+15  ratio=5.579e-03  t=4.62s

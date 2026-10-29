@@ -1,0 +1,5 @@
+# Regenerated on 2026-10-28 for this repository (script g1_wall_lemma/negctl_crit3.py written for the repository).
+$ python3 g1_wall_lemma/negctl_crit3.py 1 1 0.5 260
+(1,1,0.5) sigma=260, beta in [0,1e-9]: best rigorous margin over 32 choices = -9.0000 -> NOT certified (as expected below sigma_0')
+$ python3 g1_wall_lemma/negctl_crit3.py 1 1 0.5 275
+(1,1,0.5) sigma=275, beta in [0,1e-9]: best rigorous margin over 32 choices = -9.0000 -> NOT certified (as expected below sigma_0')

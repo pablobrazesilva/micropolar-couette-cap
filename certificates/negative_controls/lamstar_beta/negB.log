@@ -1,0 +1,5 @@
+[4.5,5.5]: limite certificado 1.50; o criterio pontual na reta falha em beta=1.3 (rho=1.032, Im=1.6509636244473134)
+[7,9]: limite certificado 1.25; o criterio pontual na reta falha em beta=1.05 (rho=1.131, Im=1.912931182772389)
+[12,16]: limite certificado 1.00; o criterio pontual na reta falha em beta=0.8 (rho=1.153, Im=2.2894284851066637)
+[22,30]: limite certificado 0.70; o criterio pontual na reta falha em beta=0.55 (rho=1.081, Im=2.802039330655387)
+[42,60]: limite certificado 0.35; o criterio pontual na reta falha em beta=0.25 (rho=1.022, Im=3.2260266448864496)

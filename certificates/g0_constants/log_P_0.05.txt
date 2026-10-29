@@ -1,0 +1,21 @@
+eta=0.05  at_lo=0.353445 (box data), utR=3.8607
+  S'=  2.0  P(S') <= 2.494e-01
+  S'=  6.0  P(S') <= 1.583e-02
+  S'= 10.0  P(S') <= 7.189e-05
+  S'= 11.5  P(S') <= 6.511e-06
+  S'= 14.0  P(S') <= 8.479e-08
+  S'= 18.2  P(S') <= 2.191e-11
+  S'= 20.0  P(S') <= 4.538e-13
+  S'= 23.6  P(S') <= 1.135e-16
+  c=0.3000 S'min= 1.0:  P(S') <= 0.8029 e^{-c S'}  for all S' >= S'min
+  c=0.3000 S'min= 2.0:  P(S') <= 0.4540 e^{-c S'}  for all S' >= S'min
+  c=0.3000 S'min= 5.0:  P(S') <= 0.1851 e^{-c S'}  for all S' >= S'min
+  c=0.3000 S'min=10.0:  P(S') <= 0.0014 e^{-c S'}  for all S' >= S'min
+  c=0.3500 S'min= 1.0:  P(S') <= 0.8439 e^{-c S'}  for all S' >= S'min
+  c=0.3500 S'min= 2.0:  P(S') <= 0.5016 e^{-c S'}  for all S' >= S'min
+  c=0.3500 S'min= 5.0:  P(S') <= 0.2376 e^{-c S'}  for all S' >= S'min
+  c=0.3500 S'min=10.0:  P(S') <= 0.0024 e^{-c S'}  for all S' >= S'min
+  c=0.3534 S'min= 1.0:  P(S') <= 0.8467 e^{-c S'}  for all S' >= S'min
+  c=0.3534 S'min= 2.0:  P(S') <= 0.5051 e^{-c S'}  for all S' >= S'min
+  c=0.3534 S'min= 5.0:  P(S') <= 0.2416 e^{-c S'}  for all S' >= S'min
+  c=0.3534 S'min=10.0:  P(S') <= 0.0025 e^{-c S'}  for all S' >= S'min

@@ -1,0 +1,12 @@
+  sigma in [66.0000, 72.3660]: avaliacoes=21462, caixas ok=13475, cauda=28, puladas=84, falhas=0, max rho=1.0000, 92s
+  sigma in [72.3660, 79.3460]: avaliacoes=42862, caixas ok=27028, cauda=57, puladas=149, falhas=0, max rho=1.0000, 182s
+  sigma in [79.3460, 86.9993]: avaliacoes=64242, caixas ok=40474, cauda=85, puladas=209, falhas=0, max rho=1.0000, 275s
+  sigma in [86.9993, 95.3907]: avaliacoes=86239, caixas ok=54337, cauda=114, puladas=251, falhas=0, max rho=1.0000, 379s
+  sigma in [95.3907, 104.5916]: avaliacoes=108147, caixas ok=68253, cauda=144, puladas=297, falhas=0, max rho=1.0000, 478s
+  sigma in [104.5916, 114.6799]: avaliacoes=130484, caixas ok=82382, cauda=174, puladas=346, falhas=0, max rho=1.0000, 582s
+  sigma in [114.6799, 125.7412]: avaliacoes=153715, caixas ok=96955, cauda=204, puladas=401, falhas=0, max rho=1.0000, 692s
+  sigma in [125.7412, 137.8695]: avaliacoes=177122, caixas ok=111614, cauda=234, puladas=460, falhas=0, max rho=1.0000, 801s
+  sigma in [137.8695, 151.1676]: avaliacoes=201802, caixas ok=126964, cauda=264, puladas=710, falhas=0, max rho=1.0000, 926s
+  sigma in [151.1676, 165.7484]: avaliacoes=227254, caixas ok=142845, cauda=295, puladas=879, falhas=0, max rho=1.0000, 1061s
+  sigma in [165.7484, 181.7355]: avaliacoes=254607, caixas ok=159692, cauda=326, puladas=1017, falhas=0, max rho=1.0000, 1211s
+  sigma in [181.7355, 199.2647]: avaliacoes=282637, caixas ok=176883, cauda=357, puladas=1144, falhas=0, max rho=1.0000, 1359s

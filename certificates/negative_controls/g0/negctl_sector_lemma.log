@@ -1,0 +1,6 @@
+# Regenerated on 2026-10-28 for this repository.
+$ python3 g0_sector_lemma/audit/negctl.py
+eta=0, th2=0.53803 < max 0.5380375 -> NOT CERTIFIED (unresolvable box t=[-3.532524872,-3.532524109], rho=[0.00e+00,7.63e-07])
+eta=0, mmin=0.6338 > min 0.633763 -> NOT CERTIFIED (unresolvable box t=[-1.856745148,-1.856744385], rho=[0.00e+00,7.63e-07])
+eta=.75, th2=0.8052 < max 0.805268 -> NOT CERTIFIED (unresolvable box t=[-3.586075592,-3.586074829], rho=[0.00e+00,7.63e-07])
+eta=.75, th1=-0.0934 > min -0.0934067 -> NOT CERTIFIED (unresolvable box t=[2.649999237,2.650000000], rho=[5.34e-05,5.42e-05])

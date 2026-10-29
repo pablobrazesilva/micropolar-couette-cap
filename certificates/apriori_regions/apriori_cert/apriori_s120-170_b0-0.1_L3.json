@@ -1,0 +1,28 @@
+{
+ "NJG": [
+  1,
+  1,
+  0.5
+ ],
+ "s_lo": 120,
+ "s_hi": 170,
+ "beta_lo": 0,
+ "beta_hi": 0.1,
+ "Lstar": 3.0,
+ "delta_prime": "0.05*0.5^(1/3)",
+ "P0": 100.0,
+ "ratio": 1.1,
+ "evals": 13554,
+ "boxes_ok": 9038,
+ "tail_evals": 19,
+ "skipped": 57,
+ "fails": [],
+ "nfails": 0,
+ "sec": 192.1,
+ "code": {
+  "ap_arb.py": "5db5a48105cd1ba02d5da4d58c1e1e62",
+  "driver2.py": "77ab5d713be9e9ee2f6c4bd947ec61d7",
+  "driver3.py": "c2ac7137ef0d6082c22af336858e236c"
+ },
+ "ok": true
+}

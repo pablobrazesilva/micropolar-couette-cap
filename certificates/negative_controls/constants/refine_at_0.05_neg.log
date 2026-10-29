@@ -1,0 +1,3 @@
+# Regenerated on 2026-10-28 for this repository. 'FAIL t1 t2 value' = the verifier stops at an irreducible box: target NOT certified.
+$ python3 g0_constants/refine.py 0.05 ut 0.35346272
+FAIL -1.203833281993866 -1.2038332223892212 0.353462719998061
