@@ -135,7 +135,7 @@ options after the run).
 Please cite the article and this archive (see `CITATION.cff`; the DOI will be assigned by Zenodo):
 
 > P. Braz e Silva. *micropolar-couette-cap: codes and certificates for the computer-assisted proof of linear stability
-> of micropolar plane Couette flow*, version 1.0.0, 2026. Zenodo. doi:10.5281/zenodo.23752514
+> of micropolar plane Couette flow*, version 1.0.0, 2026. Zenodo. doi:10.5281/zenodo.23752513
 
 ## License
 
