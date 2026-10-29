@@ -10,7 +10,7 @@ authors:
     given-names: "P."
     affiliation: "Department of Mathematics, Universidade Federal de Pernambuco"
     orcid: "https://orcid.org/0000-0003-0847-2435"
-# doi: 10.5281/zenodo.TODO      # TODO: filled in after the first Zenodo release
+doi: 10.5281/zenodo.23752514 
 # repository-code: "https://github.com/<user>/micropolar-couette-cap"   # TODO: uncomment and fill in after creating the GitHub repository
 keywords:
   - micropolar fluid
