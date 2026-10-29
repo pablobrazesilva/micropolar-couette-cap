@@ -136,5 +136,34 @@ check('145 rectangle certificates: md5 of the code recorded in each = apriori_re
 check('Lambda*(sigma) code: apriori_regions/lamstar_sigma/ap_arb.py has md5 653ed993... (the version reported for these runs)',
       md5(os.path.join(R, 'apriori_regions/lamstar_sigma/ap_arb.py')).startswith('653ed993'))
 
+print('Route 4 (v1.1.0): joint constants of Lemma F5 and Theorem C on [228, 288] (redundant on the logical path, see README)')
+R4 = os.path.join(C, 'g1_wall_lemma', 'route4')
+if os.path.isdir(R4):
+    d = json.load(open(os.path.join(R4, 'M_cert_1_1_0.5.json')))
+    nodes = sorted(float(b) for b in d['M_exp'])
+    okM = d['all_ok'] is True and d['NJG'] == [1, 1, 0.5] and nodes[0] == 0 and nodes[-1] == 1.0 and len(nodes) == 32
+    okM = okM and all(d['M_lower_exp'][b][i] <= d['M_exp'][b][i] for b in d['M_exp'] for i in (0, 1))
+    okM = okM and all(d['M_lower_s'][i] <= d['M_s'][i] for i in (0, 1))
+    okM = okM and all(r['M'] >= max(r['regions'].values()) for r in d['runs'].values()) and len(d['runs']) == 66
+    check('M_u, M_v on 32 nodes beta in [0,1] and M^s_u, M^s_v: enclosures [lower, upper] consistent; M_u(0) <= %.6f, M_v(0) <= %.6f, '
+          'M^s = %s' % (d['M_exp']['0'][0], d['M_exp']['0'][1], d['M_s']), okM)
+    code_r4 = {f: md5(os.path.join(R, 'g1_wall_lemma', 'route4', f)) for f in d['code']}
+    check('md5 of the route-4 code recorded in M_cert = g1_wall_lemma/route4/', code_r4 == d['code'])
+    runs = {}
+    for f in glob.glob(os.path.join(R4, 'M_runs', 'M_*.jsonl')):
+        for l in open(f):
+            r = json.loads(l); runs['%s_%s_%r' % (r['pair'], r['weight'], r['beta'])] = r['M']
+    check('M_cert values = the 66 recorded runs (M_runs/*.jsonl), rounded up',
+          len(runs) == 66 and all(abs(runs[k] - d['runs'][k]['M']) == 0 for k in runs) and
+          all({float(x): y for x, y in d['M_exp'].items()}[float(k.split('_')[2])][0 if k[0] == 'u' else 1] >= v for k, v in runs.items() if '_exp_' in k))
+    t8 = json.load(open(os.path.join(R4, 'T8_cert_1_1_0.5_s228.json')))
+    check('relative-cone table T8 with sigma_min = 228: all %d beta-cells of [0, 0.45] certified' % len(t8['Theta_edge']),
+          t8['sigma_min'] == 228.0 and min(a for a, b, th in t8['Theta_edge']) == 0 and max(b for a, b, th in t8['Theta_edge']) == 0.45
+          and all(th < 10 for a, b, th in t8['Theta_edge']))
+    o = json.load(open(os.path.join(R4, 'out_R4.json')))
+    check('Theorem C with route 4 on [228, 288], 0 <= beta <= beta_A: %d boxes, 0 failures, min margin %.3g' % (o['boxes'], o['min_margin']),
+          o['fails'] == [] and [float(x) for x in o['NJG']] == [1, 1, 0.5] and o['cA'] == 0.796 and o['coupling'] == 1
+          and o['sigma0'] == 228.0 and o['sigma_h'] == 288.0 and o.get('beta_min', 0) == 0)
+
 print('\n%s' % ('ALL CERTIFICATE CHECKS PASSED' if NFAIL == 0 else '%d CHECK(S) FAILED' % NFAIL))
 sys.exit(1 if NFAIL else 0)

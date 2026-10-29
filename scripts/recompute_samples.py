@@ -3,7 +3,7 @@
 Requires FLINT 3.0.1 (C library, for g2_evans/evans), python-flint 0.9.0, numpy, scipy, mpmath.  About 10-15 CPU-minutes.
 
   python3 scripts/recompute_samples.py            # all samples
-  python3 scripts/recompute_samples.py g0 g2      # only some components (g0, consts, g1, pi, thmA, lamstar, lambeta, g2)
+  python3 scripts/recompute_samples.py g0 g2      # only some components (g0, consts, g1, pi, thmA, lamstar, lambeta, g2, route4)
 
 New outputs go to $CAP_WORK (default: ./work); nothing under certificates/ is modified.
 Comparison: all recorded fields except wall-clock times must agree exactly (the computations are deterministic)."""
@@ -152,7 +152,32 @@ def g2():
         report('G2 Evans box %s a=[%g,%g] s=[%.4g,%.4g]' % (d.get('mode', 'contour'), d['alpha'][0], d['alpha'][1], d['sigma'][0], d['sigma'][1]),
                p.returncode == 0 and new.get('ok') == 1 and not diff, dt, ('%d recorded fields identical' % len(keys)) if not diff else 'differs: %s' % diff[:5])
 
-ALL = dict(g0=g0, consts=consts, g1=g1, pi=pi, thmA=thmA, lamstar=lamstar, lambeta=lambeta, g2=g2)
+def route4():
+    """v1.1.0: Arb tables, one joint constant (M_u at beta = 0) and the full run of Theorem C with route 4 on [228, 288]"""
+    sys.path.insert(0, os.path.join(R, 'g1_wall_lemma', 'route4'))
+    import run_all as RA
+    W4 = os.path.join(W, 'route4'); os.makedirs(W4, exist_ok=True)
+    MC = json.load(open(os.path.join(CERT, 'g1_wall_lemma', 'route4', 'M_cert_1_1_0.5.json')))
+    line, ftab = os.path.join(W4, 'line_tab.npz'), os.path.join(W4, 'Ftab128.npz')
+    p, dt = run('r4_linetab', [PY, 'g1_wall_lemma/route4/linetab.py', '12800', line])
+    p2, dt2 = run('r4_ftab', [PY, 'g1_wall_lemma/route4/ftab.py', '-2560', '3840', ftab])
+    ok = p.returncode == 0 and p2.returncode == 0 and RA.sha(line) == MC['tables']['line_tab.npz'] and RA.sha(ftab) == MC['tables']['Ftab128.npz']
+    report('route 4: Arb tables (Airy on the line, F = Ai/psi)', ok, dt + dt2, 'array contents identical to the recorded hashes' if ok else 'differ')
+    thr = 0.96*RA.guess('u', 'exp', 0.0)/1.02
+    p, dt = run('r4_Mu0', [PY, 'g1_wall_lemma/route4/mjoint_cert.py', 'u', 'exp', '0.0', repr(thr), line, ftab])
+    new = json.loads([l for l in p.stdout.splitlines() if l.startswith('RESULT ')][0][7:]) if p.returncode == 0 else {}
+    old = json.loads(open(os.path.join(CERT, 'g1_wall_lemma', 'route4', 'M_runs', 'M_u_exp.jsonl')).readline())
+    keys = ('M', 'M_lower', 'regions', 'strip_tk', 'strip_rows')
+    diff = [k for k in keys if new.get(k) != old.get(k)]
+    report('route 4: M_u(0) (full 2-D certification)', p.returncode == 0 and not diff, dt,
+           ('M_u(0) <= %.6f, identical to the record' % new['M']) if not diff else 'differs: %s' % diff)
+    env = dict(ENV, G1_CRIT='crit4arb', G1_MAXEVAL='3000')
+    p, dt = run('r4_driver', [PY, 'g1_wall_lemma/driver.py', '1', '1', '0.5', '0.796', '228', '288', 'R4', '1'], env=env)
+    rec = os.path.join(CERT, 'g1_wall_lemma', 'route4', 'out_R4.json')
+    ok, m = same_json(os.path.join(W, 'g1_wall_lemma/out_R4.json'), rec, keys=list(json.load(open(rec))))
+    report('route 4: Theorem C on [228, 288] (full run R4)', p.returncode == 0 and ok, dt, m)
+
+ALL = dict(g0=g0, consts=consts, g1=g1, pi=pi, thmA=thmA, lamstar=lamstar, lambeta=lambeta, g2=g2, route4=route4)
 if __name__ == '__main__':
     sel = sys.argv[1:] or list(ALL)
     T = time.time()

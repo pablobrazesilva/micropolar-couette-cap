@@ -1,0 +1,12 @@
+beta in [0,0.002]: Theta <= 0.8431
+beta in [0.002,0.005]: Theta <= 0.8422
+beta in [0.005,0.01]: Theta <= 0.8411
+beta in [0.01,0.02]: Theta <= 0.8400
+beta in [0.02,0.04]: Theta <= 0.8320
+beta in [0.04,0.07]: Theta <= 0.8217
+beta in [0.07,0.1]: Theta <= 0.8040
+beta in [0.1,0.15]: Theta <= 0.7867
+beta in [0.15,0.2]: Theta <= 0.7568
+beta in [0.2,0.3]: Theta <= 0.7267
+beta in [0.3,0.45]: Theta <= 0.6661
+seconds 256.39538192749023

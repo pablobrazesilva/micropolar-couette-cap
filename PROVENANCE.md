@@ -80,6 +80,17 @@ Python 3.13.16, python-flint 0.9.0 (its wheel bundles FLINT 3.6.0), numpy 2.5.3,
 ## Not included (not on the logical path of the Main Theorem)
 
 Theorem W and the cone rows η = 0, 0.75, 0.885–0.8895; Romanov's constant a(0); the uniformity statements in g and N;
-the other triples (N,J,G); route 4 (Lemma F5) and Lemma F7; everything labelled *numerical* (sections on numerics and
+the other triples (N,J,G); Lemma F7 (route 4, Lemma F5, was added in v1.1.0, see below); everything labelled *numerical* (sections on numerics and
 on instability for G > J); the floating-point predecessors of the verifiers; the pilot runs of G2; positive controls
 and cross-validations that need the floating-point collocation solver. These are in the project archive, not here.
+
+## v1.1.0 (route 4)
+
+All files added in v1.1.0 were written for this version (none is a copy of a development file), except
+`g1_wall_lemma/heuristic/Mtab_1_1_0.5.json` (floating-point table of the project, md5 of the original kept unchanged).
+The route-4 certificates were produced on 2026-10-29 with the code in `g1_wall_lemma/route4/` and `g1_wall_lemma/crit4arb.py`
+(md5 recorded in `M_cert_1_1_0.5.json`), python-flint 0.9.0, numpy 2.5.3.  After the runs, only the module docstring
+of `mjoint_cert.py` was corrected (grid (Z/128)^2 instead of (Z/64)^2, usage line); the md5 in `M_cert_1_1_0.5.json` is
+that of the corrected file (the runs used md5 13ffa15a…), and the sample M_u(0) was recomputed with it (identical).  The relative-cone table
+`T8_cert_1_1_0.5_s228.json` was produced by the unchanged `g0_constants/t8_sub.py 1 1 0.5 228 0 0.45`.  No file of
+v1.0.0 was modified except the documentation, `scripts/` and `CHANGELOG.md`.

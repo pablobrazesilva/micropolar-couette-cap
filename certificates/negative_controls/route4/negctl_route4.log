@@ -1,0 +1,15 @@
+# Route 4 (crit4arb), (N,J,G) = (1,1,1/2); generated on 2026-10-29 with g1_wall_lemma/negctl_crit4.py (all 32 parameter choices).
+# Below the new threshold the criterion is NOT certified; at sigma = 228 the small-beta box is certified (positive control).
+$ python3 g1_wall_lemma/negctl_crit4.py 1 1 0.5 225
+(1,1,0.5) sigma in [225,226.125], beta in [0,1e-09]: best rigorous margin over 32 choices = -9.0000 -> NOT certified (as expected below sigma_0')  (reasons: noT8,thK)
+$ python3 g1_wall_lemma/negctl_crit4.py 1 1 0.5 224 0.3 0.45
+(1,1,0.5) sigma in [224,225.12], beta in [0.3,0.45]: best rigorous margin over 32 choices = -9.0000 -> NOT certified (as expected below sigma_0')  (reasons: noT8,thK)
+$ python3 g1_wall_lemma/negctl_crit4.py 1 1 0.5 224 0.2 0.3
+(1,1,0.5) sigma in [224,225.12], beta in [0.2,0.3]: best rigorous margin over 32 choices = -9.0000 -> NOT certified (as expected below sigma_0')  (reasons: noT8,thK)
+$ python3 g1_wall_lemma/negctl_crit4.py 1 1 0.5 228
+(1,1,0.5) sigma in [228,229.14], beta in [0,1e-09]: best rigorous margin over 32 choices = 0.1089 -> certified  (reasons: ok,thK)
+# Exploration (not rigorous, not part of any certificate): even if the relative-cone table with sigma_min = 228 is allowed
+# below 228, every one of the 32 choices fails ('thK') on [224, 225.12] x [0.2, 0.45]; the threshold of this criterion is
+# therefore about 226-228, and 228 is the certified value.
+# Joint constants: the certificate M_cert_1_1_0.5.json gives two-sided enclosures [M_lower, M]; e.g. M_u(0) in
+# [0.23138, 0.23312]: any claim M_u(0) <= 0.2313 is refuted by the rigorous grid value (negative control for the M verifier).

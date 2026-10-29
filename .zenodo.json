@@ -1,6 +1,6 @@
 {
   "title": "micropolar-couette-cap: codes and certificates for the computer-assisted proof of linear stability of micropolar plane Couette flow",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "upload_type": "software",
   "description": "Codes (Python with python-flint/Arb, C with FLINT) and certificates for the computer-assisted proof of the Main Theorem of the article 'Linear stability of plane Couette flow of a micropolar fluid with the microrotation-vorticity boundary condition': for (N,J,G) = (1,1,1/2) every eigenvalue satisfies alpha R C_i <= -1/20 for all alpha, R > 0. Contains exactly the computational links of the logical path of the proof, their certificates and negative controls, with a standard-library quick verifier and scripts for partial and full recomputation.",
   "creators": [

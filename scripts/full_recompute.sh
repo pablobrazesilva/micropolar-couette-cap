@@ -1,6 +1,6 @@
 #!/bin/sh
 # Level 3: full recomputation of every computational link of the logical path, component by component.
-#   sh scripts/full_recompute.sh [g0] [consts] [pi] [g1] [thmA] [lamstar] [lambeta] [g2]      (default: all but g2)
+#   sh scripts/full_recompute.sh [g0] [consts] [pi] [g1] [thmA] [lamstar] [lambeta] [route4] [g2]  (default: all but route4, g2)
 # Requires FLINT 3.0.1, python-flint 0.9.0, numpy, scipy, mpmath.  New outputs go to $CAP_WORK (default ./work);
 # certificates/ is never modified.  Compare the outputs with certificates/ (same file names), or rerun
 # scripts/check_certificates.py on a copy of the repository in which certificates/ has been replaced by the new files.
@@ -59,6 +59,11 @@ json.dump([[d['s_lo'],d['s_hi'],d['beta_lo'],d['beta_hi'],d['Lstar']] for d in C
 json.dump([[d['s_lo'],d['s_hi'],d['beta_lo'],d['beta_hi']] for d in C if 'metodo' in d], open('rects_from_certs.json','w'))" &&
    $PY run_beta.py plan_from_certs.json 0 1000 runsb_new.jsonl && $PY run_line.py rects_from_certs.json runs_line_new.jsonl &&
    $PY negctl_drv.py 30 31 0.35 0.4 4000; $PY negctl_drv.py 60 61 0 0.05 4000) ;;
+route4)  # v1.1.0: joint constants of route 4 (66 certifications, ~45 CPU-min), T8 with sigma_min = 228, Theorem C on [228, 288]
+  $PY g1_wall_lemma/route4/run_all.py
+  $PY g0_constants/t8_sub.py 1 1 0.5 228 0 0.45
+  G1_CRIT=crit4arb G1_MAXEVAL=3000 $PY g1_wall_lemma/driver.py 1 1 0.5 0.796 228 288 R4 1
+  $PY g1_wall_lemma/negctl_crit4.py 1 1 0.5 225;  $PY g1_wall_lemma/negctl_crit4.py 1 1 0.5 224 0.3 0.45 ;;
 g2)  # Appendix F: about 28.5 CPU-hours; on a cluster use g2_evans/slurm_array.sh instead (see README)
   (mkdir -p "$CAP_WORK/g2" && cp -R g2_evans/. "$CAP_WORK/g2/" && cd "$CAP_WORK/g2" && make evans &&
    for t in tasks_C.txt tasks_B.txt tasks_A.txt; do MODO=continuacao ./run_local.sh "$(nproc)" $t; done) ;;
